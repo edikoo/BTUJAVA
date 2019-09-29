@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 class Main {
   public static void main(String[] args) {
-    davaleba8();
+    davaleba1();
   }
 
   public static void davaleba1()
