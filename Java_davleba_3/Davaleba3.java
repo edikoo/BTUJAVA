@@ -39,13 +39,10 @@ class Davaleba3 {
         }
         List l2 = new ArrayList(arr);
         int t = 1;
-        for(int x = 3;x+t<l2.size();x++)
+
+        for (int x = 3; x < l2.size(); x+=4)
         {
-            if(x%3 == 0)
-            {
-                l2.add(x+t, R.nextInt((25 - 20) + 1) + 20);
-                if(x+t < arr.size())t++;
-            }
+            l2.add(x+1, R.nextInt((25 - 20) + 1) + 20);
         }
         System.out.println("თავდაპირველი  "+ arr);
         System.out.println("შეცვლილი  " + l2);
