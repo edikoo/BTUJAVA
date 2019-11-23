@@ -38,7 +38,6 @@ class Davaleba3 {
             arr.add(R.nextInt(6) + 5);
         }
         List l2 = new ArrayList(arr);
-        int t = 1;
 
         for (int x = 3; x < l2.size(); x+=4)
         {
