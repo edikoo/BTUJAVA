@@ -10,16 +10,21 @@ class Davaleba3 {
         }
 
         List l2 = new ArrayList(arr);
-        Iterator itr = l2.iterator();
-        while (itr.hasNext())
-        {
-            int x = (Integer)itr.next();
-            if (x % 2 != 0)
-                itr.remove();
-        }
-
         Collections.sort(l2);
         Collections.sort(arr);
+
+        int x = 0;
+        for (Iterator it = l2.iterator(); it.hasNext(); )
+        {
+            it.next();
+            if (x % 2 == 0 && x != 0)
+            {
+                it.remove();
+            }
+            x++;
+        }
+        
+
         System.out.println("თავდაპირველი" + arr);
         System.out.println("ლუწების გარეშე" + l2);
     }
@@ -33,11 +38,13 @@ class Davaleba3 {
             arr.add(R.nextInt(6) + 5);
         }
         List l2 = new ArrayList(arr);
-        for(int x=0;x<=l2.size();x++)
+        int t = 1;
+        for(int x=0;x+t<=arr.size();x++)
         {
             if(x%3 == 0 && x!=0)
             {
-                l2.add(x, R.nextInt((25 - 20) + 1) + 20);
+                l2.add(x+t, R.nextInt((25 - 20) + 1) + 20);
+                if(x+t*2 < arr.size())t++;
             }
         }
         System.out.println("თავდაპირველი  "+ arr);
