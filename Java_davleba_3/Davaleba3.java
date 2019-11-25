@@ -17,7 +17,7 @@ class Davaleba3 {
         for (Iterator it = l2.iterator(); it.hasNext(); )
         {
             it.next();
-            if (x % 2 == 0 && x != 0)
+            if (x % 2 == 0)
             {
                 it.remove();
             }
