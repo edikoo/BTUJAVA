@@ -37,7 +37,7 @@ public class davaleba {
         return  alphabet;
     }
 
-    public void generateWord(int start_number_of_w, int end_number_of_w, int start_number_of_s, int end_number_of_s, String lang)
+    public void generateData(int start_number_of_w, int end_number_of_w, int start_number_of_s, int end_number_of_s, String lang)
     {
         Random random = new SecureRandom();
         StringBuilder sb;

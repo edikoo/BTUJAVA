@@ -30,7 +30,7 @@ public class Main {
         for(int i = 0; i<number_of_p; i++)
         {
             String stringLang = n.generateAlf(language);
-            n.generateWord(start_number_of_w,end_number_of_w,start_number_of_s,end_number_of_s, stringLang);
+            n.generateData(start_number_of_w,end_number_of_w,start_number_of_s,end_number_of_s, stringLang);
         }
 
     }
