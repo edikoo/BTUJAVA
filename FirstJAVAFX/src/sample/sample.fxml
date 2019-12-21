@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label text="თამაში შვიდიანი" textFill="RED">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <TextField fx:id="mainText" text="000" />
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#daatriale" prefWidth="100.0" text="დატრიალება" />
+            <Label text="თანხა: ">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="tanxa" prefHeight="10.0" prefWidth="50.0" text="100" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
