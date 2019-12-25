@@ -14,14 +14,13 @@ class Calc {
     String[] operators = {"+", "-", "^", "*", "/"};
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH-mm-ss");
 
-    public static void main(String[] args) {
-        Main m = new Main();
+    public Calc {
         Scanner input = new Scanner(System.in);
         System.out.print("შეიყვანეთ ტექსტი ");
         String input_answear = input.nextLine();
-        String result = m.calculate(input_answear);
+        String result = calculate(input_answear);
         System.out.println("შედეგი: " + result);
-        //m.write_in_file(result);
+        write_in_file(result);
     }
 
     public String parseStringHere(String s) {
